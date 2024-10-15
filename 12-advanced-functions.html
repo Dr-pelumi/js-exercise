@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Advanced Functions</title>
+  
+	</head>
+
+	<body>
+      <button onclick="" class="js-button">Click</button>
+		<script>
+         /*
+
+         const buttonElement = document.querySelector('.js-button');
+
+         const eventListener = () => { 
+            console.log('click');}
+
+         buttonElement.addEventListener('click', eventListener
+         );
+
+         buttonElement.removeEventListener('click', eventListener);
+
+
+
+         
+         /*
+         function greeting() {
+            console.log('hello');
+         };
+   const num = 2;
+
+   const function1 = function () {
+      console.log('hello2');
+   };
+
+   console.log(function1);
+
+   const object1 = {
+      num: 2,
+      fun: function greeting(){
+         console.log('helo');
+      }
+   }
+   object1.fun();
+
+   function display(param) {        //passing a value into a function
+      console.log(param);
+   }
+   display(50);
+
+   function run(param) {        //passing a function into a function
+
+   }
+   run(function(){
+      console.log('heloo4');
+   });
+   */
+
+   //SetTime out
+
+   /*setTimeout(function() {     //ist param of setTimeout
+      console.log('timeout');
+   }, 3000                     // 2nd param of setTImeout
+);
+
+console.log('next line');
+
+//SetInterval
+
+setInterval(function() {
+   console.log('interval');
+}, 3000);                 //runs the function every 3seconds
+*/
+
+/*[
+   "make Dinner",
+   "wash Dishes",
+   "watch Youtube"
+].forEach(value, index) => {
+     //preerred way of looping thrugh an array
+     if (value === 'wash disjes') {   // for each doesnt use continue, instead we use return
+      return;
+     }
+   console.log(value);
+   console.log(index);
+
+})
+   */
+
+/*const regularFunction = function(param, param2) {   //regular function
+   console.log("hello");
+
+   return 5;
+};
+
+
+const arrowFunction = (param, param2) => {  // arrow function
+   console.log('helo');
+   return 8;
+};
+arrowFunction();
+
+const oneParam = (param) => {
+   console.log(param + 1)
+
+};
+oneParam(2);
+
+const oneLine = () =>  2 + 3; //one line arrow function
+console.log(oneLine());
+
+const object2 = {
+   method: () => {
+
+   }
+}
+*/
+
+//Filter and Mapping
+[1, -3, 5].filter((value, index) =>
+{
+   return value >= 0;
+});
+
+// map
+console.log([1, 1, 3].map((value, index) => {
+   return value * 2;             // to double the array
+} ));
+
+console.log([1, 1, 3].map(value => {
+value * 2;             // to double the array
+} ));
+
+
+
+
+		</script>
+	</body>
+</html>

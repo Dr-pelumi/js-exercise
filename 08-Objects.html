@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Objects</title>
+</head>
+<body>
+   <script>
+const product2 = {
+   name: 'shirt',
+   Age: 25,
+   rating: {
+      stars: 5,
+      count: 87
+   },
+
+};
+
+console.log(product2['name']); //bracket notation
+
+console.log(product2.rating.count);
+
+console.log(JSON.stringify(product2));
+
+const jsonString = JSON.stringify(product2);
+console.log(JSON.parse(jsonString));
+
+//Local Storage
+
+console.log('hello'.length);
+console.log('hello'.toUpperCase());
+   
+method() {
+   console.log('method');
+}
+   </script>
+   
+</body>
+</html>
